@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaun Hoffmann — Robotics & Software Engineer</title>
+<meta name="description" content="Shaun Hoffmann — Computer Science student at Salisbury University. Robotics perception, AI security, and full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav id="site-nav">
+  <div class="nav-name"><a href="#top">SHAUN<span>HOFFMANN</span></a></div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#projects" data-section="projects">Projects</a>
+    <a href="#experience" data-section="experience">Experience</a>
+    <a href="#skills" data-section="skills">Skills</a>
+    <a href="#education" data-section="education">Education</a>
+    <a href="#gullhacks" data-section="gullhacks">GullHacks</a>
+    <a href="#contact" data-section="contact">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <p class="hero-eyebrow">$ whoami</p>
+    <h1>Shaun<br>Hoffmann</h1>
+    <div class="hero-bar" aria-hidden="true"></div>
+    <p class="role-line"><span id="roleText">Robotics Researcher</span><span class="cursor" aria-hidden="true">_</span></p>
+    <p class="tagline">
+      Computer Science student building perception systems for humanoid robots, AI-driven security tooling, and full-stack web applications.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="ShaunHoffmannResume.pdf" class="btn-secondary" download>Resume ↓</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <p class="eyebrow">$ ls ./projects</p>
+    <h2>Projects</h2>
+
+    <article class="project-spotlight">
+      <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+      <div class="spotlight-header">
+        <span class="tag amber">Security</span>
+        <span class="badge">🏆 1st Place — HoyaHacks 2026</span>
+      </div>
+      <h3>AI Security Scanner</h3>
+      <p>Detects prompt injection, SQL injection, and hardcoded secrets by comparing code against vectorized NIST benchmarks. Generates plain-language risk explanations and remediation suggestions.</p>
+      <div class="tech-stack">Snowflake Cortex · RAG · Python · Streamlit</div>
+      <a href="https://github.com/cscx1/checkmate-model" class="project-link">GitHub →</a>
+    </article>
+
+    <div class="project-list">
+
+      <div class="project-row">
+        <span class="row-index">01</span>
+        <div class="row-main">
+          <span class="tag">Robotics</span>
+          <h3>Robotics Perception Stack — Unitree G1</h3>
+          <p>Perception and obstacle-avoidance system for a humanoid robot in construction environments. Built a custom Roboflow dataset (1,052 annotated images from 350+ photos) for object detection.</p>
+        </div>
+        <div class="row-side">
+          <div class="tech-stack">ROS 2 · YOLOv8 · LiDAR (Livox MID-360) · SLAM · IMU</div>
+          <a href="https://github.com/giuliaf23/Robotics-Cross-Training-" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-row">
+        <span class="row-index">02</span>
+        <div class="row-main">
+          <span class="tag">Web</span>
+          <h3>SUClubs</h3>
+          <p>Full club lifecycle platform for Salisbury University. Led a 5-person team as PM and primary developer. Multi-role system (public / e-board / SGA admin) with role-gated access, session scoping, and IDOR defenses.</p>
+        </div>
+        <div class="row-side">
+          <div class="tech-stack">PHP · MySQL · JavaScript · CSS</div>
+          <a href="https://github.com/ShaunHoffmann/SUClubs" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-row">
+        <span class="row-index">03</span>
+        <div class="row-main">
+          <span class="tag">ML</span>
+          <h3>Machine Learning — Logistic Regression</h3>
+          <p>Classifier built with performance analysis and model evaluation metrics.</p>
+        </div>
+        <div class="row-side">
+          <div class="tech-stack">Python · scikit-learn · NumPy · pandas</div>
+          <a href="#" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <p class="eyebrow">$ cat ./experience.log</p>
+    <h2>Experience</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">June 2026 – Aug 2026</span>
+          <h3>Web Development & Database Intern</h3>
+          <p class="org">NASA Wallops Flight Facility — HESTO / MDSGC</p>
+          <p>Improving internal web infrastructure and database systems.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2026 – Present</span>
+          <h3>Robotics Lab Researcher</h3>
+          <p class="org">Real Robotics Lab, Salisbury University</p>
+          <p>Working on the perception stack for a Unitree G1 humanoid robot — LiDAR, SLAM, IMU, object detection, and obstacle avoidance for construction-site tasks.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Sept 2024 – Present</span>
+          <h3>Front Desk Assistant</h3>
+          <p class="org">Maggs Recreation Center, Salisbury University</p>
+          <p>Access control, facility upkeep, and member support.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <p class="eyebrow">$ pip list</p>
+    <h2>Skills</h2>
+
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <div class="pill-row">
+        <span class="pill">Java</span>
+        <span class="pill">Python</span>
+        <span class="pill">C++</span>
+        <span class="pill">C</span>
+        <span class="pill">Bash</span>
+        <span class="pill">R</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">PHP</span>
+        <span class="pill">MySQL</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Web</h3>
+      <div class="pill-row">
+        <span class="pill">RESTful APIs</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Tools & Frameworks</h3>
+      <div class="pill-row">
+        <span class="pill">VS Code</span>
+        <span class="pill">Git/GitHub</span>
+        <span class="pill">Linux (Ubuntu/WSL)</span>
+        <span class="pill">NumPy</span>
+        <span class="pill">pandas</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">PyTorch</span>
+        <span class="pill">ROS 2</span>
+        <span class="pill">YOLOv8</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <p class="eyebrow">$ cat ./transcript</p>
+    <h2>Education</h2>
+
+    <div class="edu-block">
+      <div class="edu-header">
+        <h3>Salisbury University</h3>
+        <span class="edu-date">Expected May 2027</span>
+      </div>
+      <p class="edu-degree">B.S. Computer Science · Minor in Mathematics · GPA 3.67</p>
+
+      <div class="edu-detail">
+        <h4>Relevant Coursework</h4>
+        <div class="pill-row">
+          <span class="pill">Microcomputer Organization</span>
+          <span class="pill">Advanced Data Structures & Algorithm Analysis</span>
+          <span class="pill">Systems Software</span>
+          <span class="pill">Database Design & Implementation</span>
+          <span class="pill">Theory of Computation</span>
+          <span class="pill">Calculus I & II</span>
+          <span class="pill">Discrete Mathematics</span>
+          <span class="pill">Linear Algebra</span>
+        </div>
+      </div>
+
+      <div class="edu-detail">
+        <h4>Honors</h4>
+        <p>Upsilon Pi Epsilon, Pi Mu Epsilon, and Delta Alpha Pi Honor Societies · Dean's List (Fall 2023 – Spring 2026)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gullhacks" class="gullhacks">
+    <div class="gh-inner">
+      <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+      <span class="tag amber">Co-Founder & Organizer</span>
+      <h2>GullHacks</h2>
+      <p class="gh-lead">Salisbury University's first-ever hackathon — built from scratch.</p>
+      <p class="gh-body">
+        Co-founded and organized a 24-hour, 250-participant hackathon (November 2026). Led sponsorship outreach, MLH partnership, catering, marketing, and the event website. Sponsor-funded from the ground up.
+      </p>
+      <div class="gh-stats">
+        <div class="gh-stat"><span class="gh-num amber">250</span><span class="gh-label">Participants</span></div>
+        <div class="gh-stat"><span class="gh-num amber">24hr</span><span class="gh-label">Event</span></div>
+        <div class="gh-stat"><span class="gh-num amber">1st</span><span class="gh-label">SU Hackathon</span></div>
+        <div class="gh-stat"><span class="gh-num amber">MLH</span><span class="gh-label">Partner</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="eyebrow">$ ping shaun</p>
+    <h2>Contact</h2>
+    <!-- Re-enable once your NASA internship wraps up (Aug 2026) and status changes -->
+    <!-- <p class="contact-status">Currently open to internship opportunities.</p> -->
+    <div class="contact-links">
+      <a href="mailto:shoffmann1456@gmail.com">Email</a>
+      <a href="https://github.com/ShaunHoffmann" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/shaunhoffmann" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-note">© 2026 Shaun Hoffmann</p>
+  </section>
+
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
